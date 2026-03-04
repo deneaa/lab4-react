@@ -32,3 +32,60 @@ button:focus-visible {
   line-height: 1.5;
   font-weight: 400;
 }
+
+.gallery img {
+  height: 140px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+.app-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.selected-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.selected-wrapper img {
+  height: 350px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}

@@ -56,7 +56,7 @@ function App() {
       <div className="gallery">{renderImages()}</div>
 
       <h2>Imaginea selectata: </h2>
-      <div>
+      <div className="selected-wrapper">
         <Image
           title={image.title}
           url={image.url}
@@ -65,10 +65,12 @@ function App() {
         />
       </div>
 
-      <Button title={"Urmatoarea imagine"} onClick={nextImage} />
-      <Button title={"Imaginea anterioara"} onClick={backImage} />
-      <Button title={"Imagine aleatore"} onClick={randomImage} />
-      <Button title={"Aranjare aleatoare"} onClick={renderRandomImages} />
+      <div className="buttons">
+        <Button title="Următoarea imagine" onClick={nextImage} />
+        <Button title="Imaginea anterioară" onClick={backImage} />
+        <Button title="Imagine aleatoare" onClick={randomImage} />
+        <Button title="Aranjare aleatoare" onClick={renderRandomImages} />
+      </div>
     </>
   );
 }
